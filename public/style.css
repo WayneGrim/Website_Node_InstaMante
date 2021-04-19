@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(48, 48, 48);
+}
+
+h1 {
+    color: #E5E5E5;
+}
+
+p {
+    color: #73DD70;
+
+}
+
+nav ul { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    color: papayawhip;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+nav li a:hover {
+    color: peru;
+    text-decoration: none;
+}

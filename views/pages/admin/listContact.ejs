@@ -1,0 +1,28 @@
+<%- include('../../includes/admin/header.ejs') %>
+<% for (data of datacontact) {%>
+    <div class="container mt-4">
+        </ul>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">Pseudo</li>
+            <li class="list-group-item bg-info">
+                <%- data.name %>
+            </li>
+            <li class="list-group-item">email</li>
+            <li class="list-group-item bg-info">
+                <%- data.email %>
+            </li>
+            <li class="list-group-item">objet</li>
+            <li class="list-group-item bg-info">
+                <%- data.objet %>
+            </li>
+            <li class="list-group-item">Description</li>
+            <li class="list-group-item bg-info">
+                <%- data.description %>
+            </li>
+        </ul>
+    </div>
+    <% }%>
+    <%- include('../../includes/admin/footer.ejs')%>
+
+
+    

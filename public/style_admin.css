@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+nav {
+    background: linear-gradient(#141414, #40a562,#141414);
+    color: papayawhip;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    color: papayawhip;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+nav li a:hover {
+    color: rgb(205, 191, 63);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button a:hover {
+    color: blanchedalmond;
+}

@@ -1,0 +1,22 @@
+<%- include('../../includes/admin/header.ejs') %>
+
+    <% for (data of datausers) {%>
+        <div class="container mt-4">
+            </ul>
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Pseudo</li>
+                <li class="list-group-item bg-info">
+                    <%- data.pseudo %>
+                </li>
+                <li class="list-group-item">email</li>
+                <li class="list-group-item bg-info">
+                    <%- data.email %>
+                </li>
+                <li class="list-group-item">Password</li>
+                <li class="list-group-item bg-info">
+                    <%- data.password %>
+                </li>
+            </ul>
+        </div>
+        <% }%>
+            <%- include('../../includes/admin/footer.ejs')%>

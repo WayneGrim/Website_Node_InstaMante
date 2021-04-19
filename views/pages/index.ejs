@@ -1,0 +1,64 @@
+<%- include('../includes/header.ejs')%>
+
+    <h1 class="text-center">Bienvenue sur Focus Mantis</h1>
+
+    <p class="text-center"> Ici vous pourrez créer votre biblibothèque photographique de vos mantes, terrariums et
+        élevages
+        mais aussi celles des autres utilisateurs ainsi que de donner votre avis !</p>
+    <div class="container mt-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/carousel/andrey-tikhonovskiy-MciFSETtsfk-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/carousel/mantis-4436529_1920.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/carousel/matthew-t-rader-A6kuDmUGUNY-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="d-grid gap-2">
+            <button type="button" class="btn btn-success"> <a href="/add_photo">Ajouter un article</a></button>
+        </div>
+    </div>
+
+    <h2 class="text-center">Dernieres photos</h2>
+    <div class="card" style="width: 18rem;">
+        <div class="card-img-top">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">
+                <a href="">edit</a>
+                <a href="">del</a>
+            </h5>
+            <p class="card-text">
+            </p>
+            <div>
+                <a href="/update"><i class="bi bi-pencil-square"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../includes/footer.ejs')%>

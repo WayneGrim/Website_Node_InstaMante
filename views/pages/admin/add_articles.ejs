@@ -1,0 +1,41 @@
+<%- include('../../includes/admin/header.ejs') %>
+
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                Ajouter un article
+            </div>
+            <div class="card-body">
+                <form action="/admin/add_articles" method="POST">
+                    <div class="mb-3">
+                        <label for="titre" class="form-label">Titre</label>
+                        <input type="text" class="form-control" id="titre" name="titre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <input type="text-area" class="form-control" id="description" name="description">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Image</label>
+                        <input type="file" class="form-control" id="image" name="image">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Publier</button>
+                </form>
+            </div>
+        </div>
+        <% if(locals.messageOk) { %>
+            <h4 class="alert alert-success mt-4">
+                <%- messageOk %>
+            </h4>
+            <% } %>
+                <% if(locals.messageErr) { %>
+                    <h4 class="alert alert-danger mt-4">
+                        <%- messageErr %>
+                    </h4>
+                    <% } %>
+    </div>
+
+    <%- include('../../includes/admin/footer.ejs')%>

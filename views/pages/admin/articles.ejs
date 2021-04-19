@@ -1,0 +1,29 @@
+<%- include('../../includes/admin/header.ejs') %>
+
+  <div class="container mt-4">
+
+    <button type="button" class="btn btn-outline-primary"> <a href="/admin/add_articles">Ajouter un article</a></button>
+
+    <% for (data of datas) {%>
+      <div class="card" style="width: 18rem;">
+        <div class="card-img-top">
+          <%- data.image %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%- data.titre %>
+              <a href="/admin/update?id=<%= data.id %>">edit</a>
+              <a href="/admin/delete?id=<%= data.id %>">del</a>
+          </h5>
+          <p class="card-text">
+            <%- data.description %>
+          </p>
+          <div>
+            <a href="/update"><i class="bi bi-pencil-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <% }%>
+  </div>
+  <%- include('../../includes/admin/footer.ejs')%>
